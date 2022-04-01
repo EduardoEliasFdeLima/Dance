@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dancing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="shortcut icon" href="https://i.imgur.com/sbx6aXO.jpg">
+</head> 
+<body id="bd">
+
+    <div class="normalScreen" id="NormalScreenDIV">
+        <header>
+            <h1 id="ch">Clique no vídeo para ativar o áudio</h1>
+        </header>
+
+        <div class="cardvideo">
+                <video id="vd" src="https://files.catbox.moe/n16vf8.mp4" autoplay muted loop onclick="videoMarija()" title=""></video>
+        
+        </div>
+
+    </div>
+
+
+    <div class="fullfull" id="FullScreenDIV">
+        <div class="full-screen">
+            <video id="vdd" class="fullvideo" src="https://files.catbox.moe/n16vf8.mp4" autoplay muted loop></video>
+            <div class="content" title="Click here">
+              <h1 id="PlayInFullScreen">Play Audio</h1> 
+            </div>
+        </div>
+    </div>
+   
+
+    <div id="fs" onclick="changeVideo()"><i class="fas fa-sync-alt"></i></div>
+    <div id="FullScreen" onclick="FullScreen()" class="fs2"><i id="TrocaIcon" class="fas fa-expand"></i></div>
+    <div id="NumberChange">1</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

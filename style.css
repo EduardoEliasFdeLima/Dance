@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,500&display=swap');
+
+
+.colors{
+    background: #5f0154;
+    background: #a2adc9;
+    background: #19082e;
+    background: #7d2b88;
+    background: #7f84f1;
+    background: #08061d;
+    background: #1b0d2c;
+}
+
+body{
+   background-color: #670d57;
+   color: white;
+   align-items: center;
+   font-family:  'Mulish', sans-serif;
+
+}
+
+header{
+    width: 80%;
+    height: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+header h1{
+    transition: 2s linear;
+    position: fixed;
+    
+    /*animation: bounc 5s infinite;*/
+}
+
+@keyframes bounc{
+
+    50%{
+        transform: scale(1.1,1.1);
+    }
+  
+}
+
+#fs, .fs2,  #NumberChange{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px black;
+
+}
+
+.fs2{
+    top: 70px;
+}
+
+a{
+    color: white;
+}
+
+#NumberChange{
+    top: 130px;
+    right: 10px;
+    cursor:not-allowed;
+}
+
+i{
+    transition: .4s linear;
+}
+
+i:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.cardvideo{
+    width: 700px;
+    height: 395px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+#vd{
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+    cursor: pointer;
+    bottom: 0px;
+}
+
+body ::selection{
+    color: #5f0154;
+    background: white;
+}
+
+.normalScreen{
+    /* display: none; */
+}
+
+.fullfull{
+    display: none;
+}
+
+.full-screen{
+    /* display: none; */
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    display: flex;
+   
+}
+   
+.fullvideo{
+    /* display: none; */
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+.content h1{
+    /* display: none; */
+    margin: 50px 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    transition: .4s linear;
+    cursor: pointer;
+    animation: zoom .8s linear infinite;
+}
+
+
+@keyframes zoom{
+    50%{
+      transform: scale(1.1,1.1);
+    }
+  
+}
+
+@media screen and (max-width: 750px) {
+
+    .content h1{
+        font-size: 30px;
+        margin: 30px 30px;
+    }
+
+    header{
+        margin-top: 100px;
+        font-size: 14px;
+    }
+        
+
+    .cardvideo{
+        /* width: 400px; */
+        width: 85%;
+        height: 50%;
+        /* height: 400px; */
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #vd{
+        width: max-content;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    header{
+        margin-top: 100px;
+        font-size: 12px;
+    }
+
+    .cardvideo{
+        display: flex;
+        justify-content: center;
+    }
+
+    #vd{
+        height: 100%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 399px){
+    
+    .cardvideo{
+        height: 45%;
+    }
+    
+}
+
+
+@media screen and (max-width: 340px){
+
+    .cardvideo{
+        width: 90%;
+        max-height: 40%;
+    }
+    
+}
+
